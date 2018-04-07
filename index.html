@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en" >
+
+<head>
+  <meta charset="UTF-8">
+  <title>Personal Portfolio</title>
+  
+  
+  <link rel='stylesheet prefetch' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0/css/bootstrap.css'>
+
+      <link rel="stylesheet" href="css/style.css">
+
+  
+</head>
+
+<body>
+
+  <!--https://doc-14-bg-docs.googleusercontent.com/docs/securesc/ha0ro937gcuc7l7deffksulhg5h7mbp1/0b9bbcnj83don6bkm4g479rsq2lkq2hp/1520877600000/09534832543526301674/*/1EwWD_L2XPMK-9Ekr1Sr2qIpukEUYbZ1L-->
+<!--Picture Credits Scott Webb https://www.pexels.com/photo/high-rise-building-under-white-clouds-and-blue-sky-140983/-- >
+<nav class="navbar navbar-expand-md"> <!--expand-md makes it horizontal-->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<script>
+  $(document).ready(function(){
+    $("a").on('click', function(event) {
+      if (this.hash !== "") {
+        event.preventDefault();
+        var hash = this.hash;
+        $('html, body').animate({
+          scrollTop: $(hash).offset().top}, 800, function(){
+          window.location.hash = hash;
+        });
+      }
+    });
+  });
+</script>
+
+<nav class="navbar navbar-expand-lg navbar-dark">
+  <div class="container-fluid" style="height: 100%;">
+    <a class="navbar-brand" href="#">A.D.</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item active">
+          <a class="nav-link" href="#aboutSec">About</a>
+        </li>
+        <li class="nav-item active">
+          <a class="nav-link" href="#portfolioSec">Projects</a>
+        </li>
+        <li class="nav-item active">
+          <a class="nav-link disabled" href="#formSec">Contact</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<div id="aboutSec" class="aboutSec container-fluid">
+  <div class="row">
+    <div class="col-sm-8 text-center">
+      <h4 id="bioShort" style="color: white;">Endeavoring Developer - CPA - Average Human Being</h4>
+      <hr style="border-color: white;">
+      <hr style="border-color: white;">
+      <p id="bioDes">
+        Aspiring developer that understands accounting, taxes, and is personally invested in the advancement of technology.  
+      </p>
+    </div>
+    <div class="col-sm-4" style="overflow: hidden;">
+      <div class="fill">
+        <img id="profPic" src="https://scontent-lax3-1.xx.fbcdn.net/v/t1.0-9/27540258_10155374023488597_7852445629942546778_n.jpg?oh=fadc5ffb4b7adf973afc77c1a5535448&oe=5B06EC94">
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+
+<div class="container-fluid socialSec">
+  <div class="row" style="justify-content: center; height: 100%;">
+    <div class="col-xs-12">
+      <p>
+        Feel Free To Connect!
+      </p>
+      <ul>
+        <li>
+          <a href="https://www.linkedin.com/in/allan-do-cpa-83480b64/" target="_blank">
+            <i class="fa fa-linkedin"></i>
+          </a>
+        </li>
+        <li>
+          <a href="https://github.com/v13tindaw0rld"  target="_blank">
+            <i class="fa fa-github"></i>
+          </a>
+        </li>
+        <li>
+          <a href="https://www.freecodecamp.org/v13tindaw0rld" target="_blank">
+            <i class="fa fa-free-code-camp"></i>
+          </a>
+        </li>
+        <li>
+          <a href="https://plus.google.com/u/0/+AllanDo" target="_blank">
+            <i class="fa fa-google-plus"></i>
+          </a>
+        </li>
+      </ul>
+    </div>
+  </div>  
+</div>
+
+<div id="portfolioSec" class="container-fluid portfolioSec text-center">
+  <h3>
+    Projects
+  </h3>
+  <div class="row center">
+    <a href="https://codepen.io/v13tindaw0rld/pen/xWbeOa" target="_blank">
+      <p>
+        Tribute Page for Nobuo Uematsu
+      </p>
+      <img src="http://vgmland.com/wp-content/uploads/2010/06/nobuo-uematsu-hands-relaxing-above-head-660x330.jpg" style="width:660px;height:330px; border-radius: 25%;" alt="Nobuo Uematsu">     
+    </a>
+  </div>
+</div>
+
+<div id="formSec" class="container-fluid formSec">
+  <div>
+    <h3 class="text-center">
+      Form
+    </h3>
+    <div class="row">
+      <div class="col-sm-6">
+        <form action="/action_page.php">
+          <div class="form-group">
+            <label for="name">Your Name:</label>
+            <input type="name" class="form-control" id="name">
+          </div>
+          <div class="form-group">
+            <label for="email">Email address:</label>
+            <input type="email" class="form-control" id="email">
+          </div>
+          <div class="form-group">
+            <label for="msg">Your Message:</label>
+            <input type="msg" class="form-control" id="msg">
+          </div>
+          <button type="button" class="btn btn-default">Submit</button>
+        </form>
+      </div>
+      <div class="col-sm-6">
+        <p style="font-size: 1.5em;">If you have any questions for me feel free to ask! And please, no spam!</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<footer class="footer">
+  <p>Coded by Allan Do</p>
+</footer>
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0/js/bootstrap.min.js'></script>
+
+  
+
+</body>
+
+</html>
