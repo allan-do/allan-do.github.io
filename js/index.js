@@ -10,3 +10,15 @@ $(document).ready(function(){
     }
   });
 });
+
+/*
+var test = $('<a></a>')
+      .addClass('twitter-share-button')
+      .attr('href', 'http://twitter.com/share')
+      .attr('data-text', $('#share').html()+" "+$('#authShare').html()+" #randomQuotes");
+  $('#tweetBtn').append(tweetBtn);
+  */
+/*
+var test = $('<p>hi</p>');
+$('#aboutSec').append(test);
+*/
