@@ -1,0 +1,107 @@
+body {
+  background-color: DimGrey;
+  color: white;
+}
+
+footer {
+  margin-top: 20px;
+}
+
+#time-left{
+  font-family: digital;
+  font-size: 80px;
+  text-align: center;
+  justify-content: center;
+  display: flex; 
+  flex: 0 0 100%;
+}
+
+.grid, .timeEntry {
+  min-height: 100%;
+  display: flex;
+  width: 100%;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  flex-direction: row;
+}
+
+.length-control {
+  border: 10px solid transparent;
+  display: flex; 
+  flex: 0 0 100px;
+  justify-content: space-around;
+  flex-direction: column;
+}
+
+.btn-level {
+  background-color: #E0FFFF;
+}
+
+.timer {
+  border: 7px solid #E0FFFF;
+  margin: 20px auto 10px auto;
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  z-index: 1000;
+}
+
+#timer-label {
+  text-align: center;
+  display: flex; 
+  flex: 0 0 100%;
+  font-size: 2em;
+  justify-content: center;
+  margin-top: 50px;
+}
+
+
+.timerLenConText {
+  text-align: center;
+}
+
+.timer-control {
+  justify-content: center;
+  text-align: center;
+}
+
+.timer-wrapper {
+  min-height: 100%;
+  display: flex;
+  width: 100%;
+  flex-wrap: wrap;
+  flex-direction: column;
+}
+
+input {
+  text-align: center;
+}
+
+.timeSelection {
+  width: 50px;
+  display: inline-block;
+}
+
+.incrTime, .decrTime {
+  border-radius: 50%;
+  margin: 0px 10px 0px 10px;
+  background-color: transparent;
+  border: 5px solid white;
+  color: white;
+}
+
+#toggleTimers {
+  margin: 10px 0px 10px 0px
+}
+
+#btnAdd {
+  margin-right: 5px;
+}
+
+#btnRemove {
+  margin-left: 5px;
+}
+
+#btnEdit {
+  margin-top: 10px;
+}

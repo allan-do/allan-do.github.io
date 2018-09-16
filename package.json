@@ -1,0 +1,42 @@
+{
+  "//1": "describes your app and its dependencies",
+  "//2": "https://docs.npmjs.com/files/package.json",
+  "//3": "updating this file will download and update your packages",
+  "name": "starter-react-redux",
+  "version": "0.0.1",
+  "description": "A starter app for using Redux to manage state in React",
+  "main": "server.js",
+  "scripts": {
+    "build": "webpack",
+    "start": "webpack && node server.js"
+  },
+  "dependencies": {
+    "express": "^4.16.3",
+    "jsx-loader": "^0.13.2",
+    "react": "^16.4.2",
+    "react-dom": "^16.4.2",
+    "webpack": "^4.16.5",
+    "react-router-dom": "^4.3.1",
+    "react-redux": "^5.0.7",
+    "redux": "^4.0.0",
+    "webpack-cli": "^3.1.0",
+    "nodemon": "^1.18.3",
+    "accurate-interval": "^1.0.9",
+    "css-loader": "^1.0.0",
+    "css": "^2.2.3",
+    "react-css-modules": "^4.7.4",
+    "style-loader": "^0.22.0"
+  },
+  "engines": {
+    "node": "8.x"
+  },
+  "repository": {
+    "url": "https://glitch.com/edit/#!/starter-react-redux"
+  },
+  "license": "MIT",
+  "keywords": [
+    "node",
+    "glitch",
+    "express"
+  ]
+}
