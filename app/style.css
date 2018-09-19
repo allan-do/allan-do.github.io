@@ -1,4 +1,3 @@
-
 .navbar {
     overflow: hidden;
     background-color: #121254;
@@ -88,6 +87,7 @@
 #portfolioSec {
   background-color: #E8E8E8;
   overflow: hidden;
+  padding-bottom: 10px;
 }
 
 
@@ -165,7 +165,9 @@ section {
 
 
 .project {
-  flex: 0 0 33%;
+  flex: 0 0 30%;
+  justify-content: space-around;
+  margin: 5px 5px 5px 5px;
 }
 
 
@@ -193,3 +195,6 @@ footer {
   color: white;
 }
 
+.btn {
+  border: 1px solid black;
+}
