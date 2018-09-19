@@ -1,107 +1,200 @@
-body {
-  background-color: DimGrey;
+.navbar {
+    overflow: hidden;
+    background-color: #121254;
+    position: fixed; /* Set the navbar to fixed position */
+    top: 0; /* Position the navbar at the top of the page */
+    width: 100%; /* Full width */
+    z-index: 2;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    padding-top: 0px;
+    padding-bottom: 0px;
+    text-transform: uppercase;
+    /* Do not add height as it will take out the dropdown menu */
+
+}
+
+.navbar-brand {
+  height: 100%;
+  font-family: Impact, sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.navbar div{
+  padding-top: 0px;
+  padding-bottom: 0px;
+}
+
+.collapse {
+  display: none;
+}
+
+#navbarNav {
+  padding: 0px;
+}
+.collapse.show {
+  display: block;
+}
+
+.navbar-collapse {
+  -ms-flex-preferred-size: 100%;
+  flex-basis: 100%;
+  -webkit-box-flex: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.navbar .navbar-collapse, ul {
+  height: 100%;
+}
+
+.nav-link {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.headbtn {
+  margin: 5px;
+}
+
+.aboutSec {
+  height: 100%;
+  margin-top: -75px;
+  padding-top: 150px;
+  z-index: 200;
+  background-color: #F8F8F8;
+}
+
+.aboutSec .col-sm-8 .col-sm-4{
+  max-height: 200px;
+}
+
+.formSec {
+  padding-top: 7.5%;
+  padding-bottom: 5%;
+}
+
+#portfolioSec h2 {
+  margin-top: 25px;
+ }
+
+#portfolioSec {
+  background-color: #E8E8E8;
+  overflow: hidden;
+  padding-bottom: 10px;
+}
+
+
+#profPic{
+  display: block;
+  max-width: 200px;
+  max-height: 200px;
+  margin: auto;
+}
+
+#bioDes {
+  height: auto;
+  font-size: 1.5em;
+
+}
+
+.fa {
+    
+    padding-top: 20px;
+    padding-bottom: 20px;
+    width: 70px;
+    margin: 20px;
+    text-align: center;
+    background-color: #191970;
+}
+
+.fa:hover {
+    opacity: 0.7;
+}
+
+.fa-linkedin, .fa-github, .fa-free-code-camp {
+  font-size: 20px !important;
   color: white;
+}
+
+
+.container-fluid {
+  overflow: hidden;
+}
+
+
+.aboutSec, .socialSec, .portfolioSec, .formSec{
+  width: 100%;
+  /*box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); */
+}
+
+section {
+  width: 100%;
+}
+
+.fill{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    margin: auto;
+}
+
+.fill img {
+    flex-shrink: 0;
+    border-radius: 50%;
+}
+
+.center a {
+  width: 100%;
+  margin: auto;
+}
+
+
+.projectContainer {
+  display: flex;
+  justify-content: center;
+  margin: auto;
+}
+
+
+.project {
+  flex: 0 0 30%;
+  justify-content: space-around;
+  margin: 5px 5px 5px 5px;
+}
+
+
+.socialMedia {
+  text-decoration: none !important; 
+  
+}
+
+h2 {
+  text-align: center;
 }
 
 footer {
-  margin-top: 20px;
-}
-
-#time-left{
-  font-family: digital;
-  font-size: 80px;
-  text-align: center;
-  justify-content: center;
-  display: flex; 
-  flex: 0 0 100%;
-}
-
-.grid, .timeEntry {
-  min-height: 100%;
+  background-color: #121254;
   display: flex;
-  width: 100%;
-  flex-wrap: wrap;
-  justify-content: space-around;
-  flex-direction: row;
-}
-
-.length-control {
-  border: 10px solid transparent;
-  display: flex; 
-  flex: 0 0 100px;
-  justify-content: space-around;
-  flex-direction: column;
-}
-
-.btn-level {
-  background-color: #E0FFFF;
-}
-
-.timer {
-  border: 7px solid #E0FFFF;
-  margin: 20px auto 10px auto;
-  width: 300px;
-  height: 300px;
-  border-radius: 50%;
-  z-index: 1000;
-}
-
-#timer-label {
-  text-align: center;
-  display: flex; 
-  flex: 0 0 100%;
-  font-size: 2em;
+  align-items: center;
+  flex-direction: column; 
   justify-content: center;
-  margin-top: 50px;
+  padding-bottom: 5px;
+  text-transform: uppercase;
 }
 
-
-.timerLenConText {
-  text-align: center;
-}
-
-.timer-control {
-  justify-content: center;
-  text-align: center;
-}
-
-.timer-wrapper {
-  min-height: 100%;
-  display: flex;
-  width: 100%;
-  flex-wrap: wrap;
-  flex-direction: column;
-}
-
-input {
-  text-align: center;
-}
-
-.timeSelection {
-  width: 50px;
-  display: inline-block;
-}
-
-.incrTime, .decrTime {
-  border-radius: 50%;
-  margin: 0px 10px 0px 10px;
-  background-color: transparent;
-  border: 5px solid white;
+.footerInfo{
+  flex: 0 0 50%;
   color: white;
 }
 
-#toggleTimers {
-  margin: 10px 0px 10px 0px
-}
-
-#btnAdd {
-  margin-right: 5px;
-}
-
-#btnRemove {
-  margin-left: 5px;
-}
-
-#btnEdit {
-  margin-top: 10px;
+.btn {
+  border: 1px solid black;
 }
