@@ -11,24 +11,9 @@ const { createStore } = require('redux');
 const { Provider } = require('react-redux');
 const votes = require('./reducers');
 
-/*
-original setup
-Provider store={store}>
-    <BrowserRouter>
-      <div>
-        <Route exact path="/" component={MainApp}/>
-        <Route path="/about" component={About}/>
-      </div>
-    </BrowserRouter>
-  </Provider>), document.getElementById('main'));
-*/
-
-
 let store = createStore(votes);
 
 /* Import Components */
-const MainApp = require('./components/MainApp');
-const EditPage = require('./components/EditPage');
 const Website = require('./components/Website');
 const AboutSec = require('./components/AboutSec');
 

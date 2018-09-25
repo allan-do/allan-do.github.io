@@ -4,8 +4,8 @@ const NavBar = require('./NavBar');
 const AboutSec = require('./AboutSec');
 const Footer = require('./Footer');
 const styles = require('../style.css');
-const ProjectSection = require('./ProjectSection');
-
+//const ProjectSection = require('./ProjectSection');
+const ProjectSecContainer = require('../containers/ProjectSecContainer');
 
 /* the main page for the index route of this app */
 const Website = function() {
@@ -13,7 +13,7 @@ const Website = function() {
     <div>
       <NavBar />
       <AboutSec />
-      <ProjectSection />
+      <ProjectSecContainer />
       <Footer />
     </div>
   );
