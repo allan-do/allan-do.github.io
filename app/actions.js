@@ -1,12 +1,8 @@
 /* actions */
 
 module.exports = {
-
-  ADDTIMER: 'ADDTIMER',
   
-  REMOVETIMER: 'REMOVETIMER',
-  
-  LENGTHCONTROLLIST: 'LENGTHCONTROLLIST',
+  FILTER: 'FILTER',
   
   SUBMIT: 'SUBMIT',
   
@@ -16,21 +12,9 @@ module.exports = {
   
   DECTIME: 'DECTIME',
 
-  addtimer: function() {
+  filter: function() {
     return {
-      type: this.ADDTIMER
-    }
-  },
-  
-  removetimer: function() {
-    return {
-      type: this.REMOVETIMER
-    }
-  },
-  
-  lengthcontrollist: function() {
-    return {
-      type: this.LENGTHCONTROLLIST
+      type: this.FILTER
     }
   },
   
